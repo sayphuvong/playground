@@ -11,17 +11,17 @@ function App() {
       <Router>
         <header className="App-header">
           <nav>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/video">Video</Link>
+            <Link to="/playground">Home</Link>
+            <Link to="/playground/about">About</Link>
+            <Link to="/playground/video">Video</Link>
           </nav>
         </header>
 
         <div className="content">
           <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/video" element={<VideoPage />} />
+            <Route path="/playground/" element={<HomePage />} />
+            <Route path="/playground/about" element={<AboutPage />} />
+            <Route path="/playground/video" element={<VideoPage />} />
           </Routes>
         </div>
       </Router>
